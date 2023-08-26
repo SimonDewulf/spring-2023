@@ -1,14 +1,20 @@
-package be.ordina.beans;
+package be.ordina.beans.config;
 
 import be.ordina.beans.model.Location;
 import be.ordina.beans.model.Piece;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Configuration
+@ComponentScan("be.ordina.beans")
 public class Config {
 
-    public static Map<Location, Piece> board() {
+    @Bean
+    public Map<Location, Piece> chessBoard() {
         var board = new HashMap<Location, Piece>();
         board.put(Location.builder()
                         .x("A")

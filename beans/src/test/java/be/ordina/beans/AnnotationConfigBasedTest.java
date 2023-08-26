@@ -1,5 +1,6 @@
 package be.ordina.beans;
 
+import be.ordina.beans.config.Config;
 import be.ordina.beans.repo.ChessGameRepository;
 import be.ordina.beans.service.ChessGameService;
 import org.junit.jupiter.api.Test;
@@ -10,7 +11,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@ExtendWith(SpringExtension.class)
 public class AnnotationConfigBasedTest {
 
     @Test
