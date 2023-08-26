@@ -1,27 +1,25 @@
 package be.ordina.beans.service;
 
 import be.ordina.beans.model.Game;
-import be.ordina.beans.model.Location;
-import be.ordina.beans.model.Piece;
 import be.ordina.beans.model.Player;
 import be.ordina.beans.repo.ChessGameRepository;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import be.ordina.beans.repo.ChessGameRepositoryImpl;
 
-import java.util.Map;
+import static be.ordina.beans.config.Config.board;
 
-@Service
-@RequiredArgsConstructor
 public class ChessGameServiceImpl implements ChessGameService {
 
-    private final Map<Location, Piece> board;
     private final ChessGameRepository chessGameRepository;
+
+    public ChessGameServiceImpl(ChessGameRepository chessGameRepository) {
+        this.chessGameRepository = chessGameRepository;
+    }
 
     public Game createGame() {
         var game = Game.builder()
                 .white(new Player("Julia"))
                 .black(new Player("Romeo"))
-                .board(board)
+                .board(board())
                 .build();
         return chessGameRepository.saveGame(game);
     }

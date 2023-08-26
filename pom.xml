@@ -16,6 +16,7 @@
     <name>spring-2023</name>
     <modules>
         <module>beans</module>
+        <module>test</module>
     </modules>
 
     <properties>
