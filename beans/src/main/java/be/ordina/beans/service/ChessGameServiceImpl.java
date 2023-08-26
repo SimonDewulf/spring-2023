@@ -11,8 +11,8 @@ public class ChessGameServiceImpl implements ChessGameService {
 
     private final ChessGameRepository chessGameRepository;
 
-    public ChessGameServiceImpl() {
-        this.chessGameRepository = new ChessGameRepositoryImpl();
+    public ChessGameServiceImpl(ChessGameRepository chessGameRepository) {
+        this.chessGameRepository = chessGameRepository;
     }
 
     public Game createGame() {
