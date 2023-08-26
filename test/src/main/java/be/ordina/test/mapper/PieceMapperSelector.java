@@ -9,7 +9,7 @@ import java.util.List;
 
 @Component
 @RequiredArgsConstructor
-public class PïeceMapperSelector {
+public class PieceMapperSelector {
 
     private final List<PieceMapper> pieceMappers;
 

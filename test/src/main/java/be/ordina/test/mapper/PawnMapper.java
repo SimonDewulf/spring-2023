@@ -6,7 +6,7 @@ import be.ordina.test.model.piece.Piece;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PawnMapper implements PieceMapper<Pawn> {
+class PawnMapper implements PieceMapper<Pawn> {
     @Override
     public boolean applies(Piece piece) {
         return piece instanceof Pawn;
