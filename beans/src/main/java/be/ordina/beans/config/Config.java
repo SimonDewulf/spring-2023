@@ -1,4 +1,4 @@
-package be.ordina.beans;
+package be.ordina.beans.config;
 
 import be.ordina.beans.model.Location;
 import be.ordina.beans.model.Piece;

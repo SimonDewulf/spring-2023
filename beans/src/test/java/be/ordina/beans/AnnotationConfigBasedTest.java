@@ -1,5 +1,6 @@
 package be.ordina.beans;
 
+import be.ordina.beans.config.Config;
 import be.ordina.beans.repo.ChessGameRepository;
 import be.ordina.beans.service.ChessGameService;
 import org.junit.jupiter.api.Test;

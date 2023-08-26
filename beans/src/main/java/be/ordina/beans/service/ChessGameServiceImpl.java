@@ -5,7 +5,7 @@ import be.ordina.beans.model.Player;
 import be.ordina.beans.repo.ChessGameRepository;
 import be.ordina.beans.repo.ChessGameRepositoryImpl;
 
-import static be.ordina.beans.Config.board;
+import static be.ordina.beans.config.Config.board;
 
 public class ChessGameServiceImpl implements ChessGameService {
 
