@@ -1,19 +1,17 @@
 package be.ordina.beans;
 
-import be.ordina.beans.config.BoardConfig;
 import be.ordina.beans.config.GameConfig;
 import be.ordina.beans.repo.ChessGameRepository;
 import be.ordina.beans.service.ChessGameService;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@ExtendWith(SpringExtension.class)
 public class AnnotationBoardConfigBasedTest {
+
+    //todo make this test pass
 
     @Test
     void testApplicationContext() {
