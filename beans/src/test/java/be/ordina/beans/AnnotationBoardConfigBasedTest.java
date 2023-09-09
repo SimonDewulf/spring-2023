@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class AnnotationBoardConfigBasedTest {
 
+    //todo make this test pass
+
     @Test
     void testApplicationContext() {
         var context = new AnnotationConfigApplicationContext(GameConfig.class);
