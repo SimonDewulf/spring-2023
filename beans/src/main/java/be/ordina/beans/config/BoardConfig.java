@@ -3,15 +3,12 @@ package be.ordina.beans.config;
 import be.ordina.beans.model.Location;
 import be.ordina.beans.model.Piece;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
-@ComponentScan("be.ordina.beans")
-public class Config {
 public class BoardConfig {
 
     @Bean
