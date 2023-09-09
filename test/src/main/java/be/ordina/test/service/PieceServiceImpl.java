@@ -12,4 +12,5 @@ public class PieceServiceImpl implements PieceService {
     public List<Piece> getLivingPieces() {
         return List.of(new Queen(Color.BLACK), new Rook(Color.WHITE), new Bishop(Color.BLACK), new King(Color.WHITE), new King(Color.BLACK));
     }
+
 }

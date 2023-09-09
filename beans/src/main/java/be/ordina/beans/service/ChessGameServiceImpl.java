@@ -1,11 +1,10 @@
 package be.ordina.beans.service;
 
 import be.ordina.beans.model.Game;
-import be.ordina.beans.model.Player;
 import be.ordina.beans.repo.ChessGameRepository;
-import be.ordina.beans.repo.ChessGameRepositoryImpl;
 
-import static be.ordina.beans.config.Config.board;
+import static be.ordina.beans.config.BoardConfig.board;
+import static be.ordina.beans.config.GameConfig.game;
 
 public class ChessGameServiceImpl implements ChessGameService {
 
@@ -16,11 +15,7 @@ public class ChessGameServiceImpl implements ChessGameService {
     }
 
     public Game createGame() {
-        var game = Game.builder()
-                .white(new Player("Julia"))
-                .black(new Player("Romeo"))
-                .board(board())
-                .build();
-        return chessGameRepository.saveGame(game);
+        var newGame = game(board());
+        return chessGameRepository.saveGame(newGame);
     }
 }

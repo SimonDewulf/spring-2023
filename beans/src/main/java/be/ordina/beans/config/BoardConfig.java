@@ -6,7 +6,7 @@ import be.ordina.beans.model.Piece;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Config {
+public class BoardConfig {
 
     public static Map<Location, Piece> board() {
         var board = new HashMap<Location, Piece>();
