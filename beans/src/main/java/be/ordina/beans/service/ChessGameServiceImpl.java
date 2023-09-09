@@ -8,6 +8,8 @@ import be.ordina.beans.repo.ChessGameRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
+import static be.ordina.beans.config.BoardConfig.board;
+import static be.ordina.beans.config.GameConfig.game;
 
 @Component
 public class ChessGameServiceImpl implements ChessGameService {
@@ -22,11 +24,7 @@ public class ChessGameServiceImpl implements ChessGameService {
     }
 
     public Game createGame() {
-        var game = Game.builder()
-                .white(new Player("Julia"))
-                .black(new Player("Romeo"))
-                .board(board)
-                .build();
-        return chessGameRepository.saveGame(game);
+        var newGame = game(board);
+        return chessGameRepository.saveGame(newGame);
     }
 }

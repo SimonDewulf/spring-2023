@@ -12,6 +12,7 @@ import java.util.Map;
 @Configuration
 @ComponentScan("be.ordina.beans")
 public class Config {
+public class BoardConfig {
 
     @Bean
     public Map<Location, Piece> chessBoard() {
