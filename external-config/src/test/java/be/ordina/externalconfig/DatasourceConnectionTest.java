@@ -5,5 +5,6 @@ public class DatasourceConnectionTest {
     /*
     todo: define a bean of type Datasource using external configuration
     use the connect method on the connectionService to trigger the logs and check if your properties are loaded in properly
+    inject the Environment bean in a test and assert your expected values are present
      */
 }
