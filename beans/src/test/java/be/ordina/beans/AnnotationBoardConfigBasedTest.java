@@ -18,6 +18,18 @@ public class AnnotationBoardConfigBasedTest {
         var context = new AnnotationConfigApplicationContext(GameConfig.class);
 
         assertAll(
+                () -> assertNotNull(context.getBean("chessBoard")),
+                () -> assertNotNull(context.getBean("game")),
+                () -> assertNotNull(context.getBean("config")),
+                () -> assertNotNull(context.getBean("gameConfig"))
+        );
+    }
+
+    @Test
+    void testApplicationContextWithComponents() {
+        var context = new AnnotationConfigApplicationContext(GameConfig.class);
+
+        assertAll(
                 () -> assertNotNull(context.getBean(ChessGameRepository.class)),
                 () -> assertNotNull(context.getBean(ChessGameService.class)),
                 () -> assertNotNull(context.getBean("chessBoard")),
