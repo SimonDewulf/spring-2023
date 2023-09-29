@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/external-config/pom.xml" />
         <option value="$PROJECT_DIR$/bean-disambiguation/pom.xml" />
         <option value="$PROJECT_DIR$/scopes/pom.xml" />
+        <option value="$PROJECT_DIR$/rest/pom.xml" />
       </list>
     </option>
   </component>
