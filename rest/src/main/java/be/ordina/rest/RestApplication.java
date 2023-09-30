@@ -16,7 +16,11 @@ public class RestApplication {
                    delete a chess game
                    update a chess players points
 
-              ex2: define exceptionHandling for generic and specific exception cases
+       todo:  ex2: test your code using MockMvc
+
+       todo: ex3: define exceptionHandling for generic and specific exception cases, test using mockMvc
+
+       todo: ex4: test the endpoints using restTemplate
 
 
     */

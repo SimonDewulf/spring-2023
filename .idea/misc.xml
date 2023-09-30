@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/bean-disambiguation/pom.xml" />
         <option value="$PROJECT_DIR$/scopes/pom.xml" />
         <option value="$PROJECT_DIR$/rest/pom.xml" />
+        <option value="$PROJECT_DIR$/client/pom.xml" />
       </list>
     </option>
   </component>
