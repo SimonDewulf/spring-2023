@@ -11,9 +11,8 @@ import java.time.LocalDateTime;
 
 @ControllerAdvice
 public class GeneralControllerAdvice {
-
-    @ExceptionHandler(Throwable.class)
-    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    @ExceptionHandler(NotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     public ErrorDto handleNotFoundException(NotFoundException e) {
         return ErrorDto.builder()
                 .localDateTime(LocalDateTime.now())

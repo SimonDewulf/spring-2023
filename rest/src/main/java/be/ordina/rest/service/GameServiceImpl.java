@@ -6,6 +6,7 @@ import be.ordina.rest.model.Game;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -46,6 +47,7 @@ class GameServiceImpl implements GameService {
 
     @Override
     public Game findGameById(UUID gameId) {
-        return games.get(gameId);
+        return Optional.ofNullable(games.get(gameId))
+                .orElseThrow(() -> new GameNotFoundException(String.format("game with id: %s does not exist", gameId.toString())));
     }
 }
